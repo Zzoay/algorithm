@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <iterator>
+#include <cmath>
 
 using namespace std;
 

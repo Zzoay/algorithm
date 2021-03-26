@@ -22,7 +22,7 @@ public:
 
     for(char c : word){
       int idx = c - 'a';
-      if(node->next[idx] == NULL){
+      if(node->next[idx] == nullptr){
         node->next[idx] = new Trie();
       }
       node = node->next[idx]; 
@@ -35,7 +35,7 @@ public:
 
     for(char c : word){
       node = node->next[c - 'a'];
-      if(node == NULL) return false;
+      if(node == nullptr) return false;
     }
     return node->isEnd;
   }
@@ -45,7 +45,7 @@ public:
 
     for(char c : prefix){
       node = node->next[c - 'a'];
-      if(node == NULL) return false;
+      if(node == nullptr) return false;
     }
     return true;
   }
